@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Baloo+Chettan+2|Tangerine&display=swap');
+
+#bg {
+  height:800px;
+  width:1200px;
+  text-align: center;
+  margin-top:-400px;
+  margin-left:150px;
+  opacity: 0.14;
+  position: fixed;
+  z-index: 1;
+}
+h1{
+    color: #cdcdcd;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 85px;
+    font-weight: 15;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+h2{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 60px;
+}
+h3{
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 30px;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+p{
+    color: #cdcdcd;
+    font-family: 'Courier New';
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+.p2{
+  font-size: 18px;
+  margin-top: -10px;
+}
+.p3{
+  font-size: 20px;
+}
+header{
+  background-color: #010101;
+  padding: 1.8% 15%;
+  height:10%;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background: linear-gradient(#010101, transparent);
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+ul li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: #cdcdcd;
+}
+ul li a.active{
+    color: #2244ca;
+}
+ul li a:hover{
+    color: #0029ce;
+}
+.top-container {
+  width: 100%;
+  height: 785px;
+  background-color: #010101;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.top-container:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 85px;
+  z-index: 1;
+  background: linear-gradient(transparent, #00011c);
+}
+.bubble{
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  opacity: 0.18;
+  animation: flying 8s infinite ease-in;
+}
+@keyframes flying{
+  0%{
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(100px);
+  }
+  100%{
+    bottom: 1480px;
+    transform: translateX(-200px);
+  }
+}
+.middle-container{
+    background-color: #00011c;
+    text-align: left;
+    padding-bottom:150px;
+    opacity:1.0;
+    z-index:2;
+    position:relative;
+}
+.middle-container:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  background: linear-gradient(#00011c, #010101);
+}
+.end-container{
+  background-color: #010101;
+  height:15px;
+  padding-bottom:100px;
+  bottom:0;
+  z-index:2;
+  position:relative;
+}
+.profile{
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.photo{
+    width: 140px;
+    height: 191.36px;
+    margin-top: 45px;
+    margin-right:25px;
+    z-index:3;
+}
+.photo:hover{
+  opacity:0.7;
+}
+.photo-end{
+    width: 140px;
+    height: 191.36px;
+    margin-top: 45px;
+    z-index:3;
+}
+.photo-end:hover{
+  opacity:0.7;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 5s infinite;
+   -moz-animation: flickerAnimation 5s infinite;
+   -o-animation: flickerAnimation 5s infinite;
+    animation: flickerAnimation 5s infinite;
+}
