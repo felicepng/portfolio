@@ -7,7 +7,6 @@ import Experience from './Components/Experience';
 import Designs from './Components/Designs';
 import Footer from './Components/Footer';
 import Bubbles from './Components/Bubbles';
-import Bubble from './Components/Bubble';
 
 class App extends Component {
   constructor(props){
@@ -24,9 +23,11 @@ class App extends Component {
       </div>
       
       <div className="middle-container">
-        <About />
-        <Experience />
-        <Designs />
+        <div className="profile">
+          <About />
+          <Experience />
+          <Designs />
+        </div>
       </div>
 
       <div className="end-container">
